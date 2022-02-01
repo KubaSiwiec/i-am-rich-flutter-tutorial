@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
                 Container(
                     height: 100,
                     child: Text("Jestem bogolem"),
-                    color: Colors.blueGrey[600]
+                    color: Colors.blueGrey[700]
                 ),
                 SizedBox(
                   height: 20,
@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
                 Container(
                     height: 100,
                     child: Text("Jestem bogolem"),
-                    color: Colors.blueGrey[600]
+                    color: Colors.blueGrey[800]
                 ),
               ]
             ),
