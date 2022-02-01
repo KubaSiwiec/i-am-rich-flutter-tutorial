@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,9 +18,9 @@ class MyApp extends StatelessWidget {
           title: Text("Smacznej kawusi"),
         ),
         body: SafeArea(
-          child: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
                 Container(
                     height: 100,
@@ -29,10 +30,28 @@ class MyApp extends StatelessWidget {
                 SizedBox(
                   height: 20,
                 ),
-                Container(
-                    height: 100,
-                    child: Text("Jestem bogolem"),
-                    color: Colors.blueGrey[700]
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: <Widget> [
+                    Container(
+                        height: 100,
+                        width: 100,
+                        child: Text("Jestem bogolem"),
+                        color: Colors.blueGrey[700]
+                    ),
+                    Container(
+                        height: 100,
+                        width: 100,
+                        child: Text("Jestem bogolem"),
+                        color: Colors.blueGrey[700]
+                    ),
+                    Container(
+                        height: 100,
+                        width: 100,
+                        child: Text("Jestem bogolem"),
+                        color: Colors.blueGrey[700]
+                    ),
+                  ]
                 ),
                 SizedBox(
                   height: 20,
@@ -42,10 +61,12 @@ class MyApp extends StatelessWidget {
                     child: Text("Jestem bogolem"),
                     color: Colors.blueGrey[800]
                 ),
+                Container(
+                    width: double.infinity
+                ),
               ]
             ),
           ),
-        ),
       ),
     );
   }
