@@ -1,21 +1,29 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return
     MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.blueGrey[500],
+        backgroundColor: Colors.teal[800],
         appBar: AppBar(
-          title: Text('I Am Rich'),
-          backgroundColor: Colors.blueGrey[900],
+          backgroundColor: Colors.teal[900],
+          centerTitle: true,
+          title: Text("Smacznej kawusi"),
         ),
-        body:
-          Center(
-            child: Image(
-                image: AssetImage('images/kebab.png')
-              ),
+        body: SafeArea(
+          child: Center(
+            child: Container(
+              child: Text("Jestem bogolem")
             ),
+          ),
+        ),
       ),
-    ),
-  );
+    );
+  }
 }
